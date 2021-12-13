@@ -1,16 +1,17 @@
-
 import { initializeApp } from "firebase/app";
+import {getFirestore} from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDFt1tJ5DabnWmpGBQNQ47sTT_19UyW78I",
-  authDomain: "spint3-75d09.firebaseapp.com",
-  projectId: "spint3-75d09",
-  storageBucket: "spint3-75d09.appspot.com",
-  messagingSenderId: "20706170289",
-  appId: "1:20706170289:web:b605c1c641efa84f5d1990"
+  apiKey: "AIzaSyBfM8-3dtU3Q_0a4ObIaELfbaouPl5b7GM",
+  authDomain: "as-f2471.firebaseapp.com",
+  projectId: "as-f2471",
+  storageBucket: "as-f2471.appspot.com",
+  messagingSenderId: "517146740989",
+  appId: "1:517146740989:web:662c8ea3adb83288d05694"
 };
 
 
 const app = initializeApp(firebaseConfig);
+const db = getFirestore();
 
-export {app};
+export {app,db};

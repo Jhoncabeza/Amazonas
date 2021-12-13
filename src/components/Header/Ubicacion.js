@@ -2,9 +2,9 @@ import React from 'react'
 
 const Ubicacion = () => {
     return (
-        <div>
-            <p>Hola</p>
-        </div>
+        <>
+            <p>Elige tu direccion</p>
+        </>
     )
 }
 

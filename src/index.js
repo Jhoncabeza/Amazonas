@@ -1,18 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import { createGlobalStyle } from "styled-components";
-const GlobalStyle = createGlobalStyle`
-  html{
-    margin: 0;
-    padding: 0;
-    font-family: "Amazon Ember",Arial,sans-serif;
-  }
-`;
+import { Provider } from 'react-redux';
+import { store } from './store/store';
+
+
 ReactDOM.render(
-  <React.StrictMode>
-    <GlobalStyle />
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );

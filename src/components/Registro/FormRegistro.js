@@ -1,7 +1,7 @@
 import { ButtonFormRegistro, DivForm, ImgLogo } from "../../styles/styled"
 import * as Yup from 'yup'
 import { Formik, Field, Form, ErrorMessage } from 'formik'
-import { FormGroup, Button, Row, Col } from 'reactstrap'
+import { FormGroup, Row, Col } from 'reactstrap'
 
 const formSchema = Yup.object().shape({
     Nombre: Yup.string()
